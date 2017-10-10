@@ -47,11 +47,5 @@ setup(
         'pytest-doctestplus',
         'pytest-remotedata',
         'pytest-openfiles'
-    ],
-    # These links to github are temporary until the packages are available on pypi
-    dependency_links =[
-        'git+https://github.com/astropy/pytest-doctestplus.git#egg=pytest-doctestplus',
-        'git+https://github.com/astropy/pytest-remotedata.git#egg=pytest-remotedata',
-        'git+https://github.com/astropy/pytest-openfiles.git#egg=pytest-openfiles'
-    ],
+    ]
 )
