@@ -14,7 +14,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='pytest-astropy',
-    version='0.1.0',
+    version='0.1.1.dev',
     license='BSD',
     description='Meta-package containing dependencies for testing',
     author='The Astropy Developers',
