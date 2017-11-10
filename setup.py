@@ -43,9 +43,9 @@ setup(
     keywords=[ 'pytest', 'py.test', 'remotedata', 'openfiles', 'doctestplus' ],
     python_requires='>=2.7',
     install_requires=[
-        'pytest>=2.8.0',
+        'pytest>=3.1.0',
         'pytest-doctestplus',
-        'pytest-remotedata',
+        'pytest-remotedata>=0.2.0',
         'pytest-openfiles'
     ]
 )
