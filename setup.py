@@ -50,9 +50,9 @@ setup(
     python_requires='>=2.7',
     install_requires=[
         'pytest>=3.1.0',
-        'pytest-doctestplus',
+        'pytest-doctestplus>=0.1.2',
         'pytest-remotedata>=0.2.0',
-        'pytest-openfiles',
+        'pytest-openfiles>=0.2.0',
         'pytest-mpl',
         'pytest-arraydiff'
     ]
