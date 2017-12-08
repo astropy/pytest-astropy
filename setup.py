@@ -53,7 +53,8 @@ setup(
         'pytest-doctestplus>=0.1.2',
         'pytest-remotedata>=0.2.0',
         'pytest-openfiles>=0.2.0',
-        'pytest-mpl',
+        # Do not include as dependency until CI issues can be worked out
+        #'pytest-mpl',
         'pytest-arraydiff'
     ]
 )
