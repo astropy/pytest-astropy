@@ -1,4 +1,4 @@
-0.2.1 (unreleased)
+0.2.1 (2017-12-08)
 ==================
 
 - Remove dependency on ``pytest-mpl`` since it introduces a dependency on
