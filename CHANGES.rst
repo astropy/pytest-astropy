@@ -1,6 +1,8 @@
 0.2.1 (unreleased)
 ==================
 
+- Remove dependency on ``pytest-mpl`` since it introduces a dependency on
+  ``matplotlib``, which is not always desirable.
 
 0.2.0 (2017-12-07)
 ==================
