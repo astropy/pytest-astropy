@@ -13,6 +13,7 @@ Dependencies
 ------------
 
 The following dependencies are installed by this package:
+
 * The `pytest`_ testing framework for Python
 * `pytest-remotedata`_, a ``pytest`` plugin used for controlling access to data
   files hosted online
@@ -20,8 +21,6 @@ The following dependencies are installed by this package:
   for testing example code in documentation
 * `pytest-openfiles`_, a ``pytest`` plugin for detecting file handles that were
   inadvertently left open at the end of unit tests
-* `pytest-mpl`_, a ``pytest`` plugin that facilitates image comparison for
-  `matplotlib`_ figures
 * `pytest-arraydiff`_, a ``pytest`` plugin that enables the generation and
   comparison of data arrays produced during unit tests
 
@@ -29,8 +28,6 @@ The following dependencies are installed by this package:
 .. _pytest-remotedata: https://github.com/astropy/pytest-remotedata
 .. _pytest-doctestplus: https://github.com/astropy/pytest-doctestplus
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
-.. _pytest-mpl: https://github.com/matplotlib/pytest-mpl
-.. _matplotlib: https://matplotlib.org
 .. _pytest-arraydiff: https://github.com/astrofrog/pytest-arraydiff
 
 Installation
