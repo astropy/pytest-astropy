@@ -13,6 +13,7 @@ Dependencies
 ------------
 
 The following dependencies are installed by this package:
+
 * The `pytest`_ testing framework for Python
 * `pytest-remotedata`_, a ``pytest`` plugin used for controlling access to data
   files hosted online
