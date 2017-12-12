@@ -1,6 +1,8 @@
 0.2.2 (unreleased)
 ==================
 
+- Explicitly pin ``pytest-arraydiff`` to version >= 0.1. [#10]
+
 0.2.1 (2017-12-08)
 ==================
 
