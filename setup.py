@@ -55,6 +55,6 @@ setup(
         'pytest-openfiles>=0.2.0',
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
-        'pytest-arraydiff'
+        'pytest-arraydiff>=0.1'
     ]
 )
