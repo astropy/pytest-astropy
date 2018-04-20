@@ -1,7 +1,10 @@
-0.2.2 (unreleased)
+0.3.0 (2018-04-20)
 ==================
 
 - Explicitly pin ``pytest-arraydiff`` to version >= 0.1. [#10]
+
+- Update dependencies on ``pytest-doctestplus``, ``pytest-remotedata``, and
+  ``pytest-openfiles`` to reflect recent releases. [#11]
 
 0.2.1 (2017-12-08)
 ==================

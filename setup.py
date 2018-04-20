@@ -19,7 +19,7 @@ def readme():
 
 setup(
     name='pytest-astropy',
-    version='0.2.2.dev',
+    version='0.3.0',
     license='BSD',
     description='Meta-package containing dependencies for testing',
     long_description=readme(),
@@ -50,9 +50,9 @@ setup(
     python_requires='>=2.7',
     install_requires=[
         'pytest>=3.1.0',
-        'pytest-doctestplus>=0.1.2',
-        'pytest-remotedata>=0.2.0',
-        'pytest-openfiles>=0.2.0',
+        'pytest-doctestplus>=0.1.3',
+        'pytest-remotedata>=0.2.1',
+        'pytest-openfiles>=0.3.0',
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
         'pytest-arraydiff>=0.1'
