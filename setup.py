@@ -51,7 +51,7 @@ setup(
     install_requires=[
         'pytest>=3.1.0',
         'pytest-doctestplus>=0.1.3',
-        'pytest-remotedata>=0.2.1',
+        'pytest-remotedata>=0.3.0',
         'pytest-openfiles>=0.3.0',
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
