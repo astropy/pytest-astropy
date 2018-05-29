@@ -1,4 +1,4 @@
-0.4.0 (unreleased)
+0.4.0 (2018-05-29)
 ==================
 
 - Update ``pytest-remotedata`` to reflect new version. [#12]
