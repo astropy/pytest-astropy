@@ -1,5 +1,8 @@
-0.4.1 (unreleased)
+0.5.0 (2018-11-26)
 ==================
+
+- Updates to ``pytest-remotedata``, ``pytest-doctestplus``, and
+  ``pytest-openfiles``. [#14]
 
 0.4.0 (2018-05-29)
 ==================
