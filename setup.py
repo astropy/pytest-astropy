@@ -19,7 +19,7 @@ def readme():
 
 setup(
     name='pytest-astropy',
-    version='0.5.0',
+    version='0.6.0.dev',
     license='BSD',
     description='Meta-package containing dependencies for testing',
     long_description=readme(),
