@@ -56,5 +56,10 @@ setup(
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
         'pytest-arraydiff>=0.1'
-    ]
+    ],
+    entry_points={
+        'pytest11': [
+            'pytest_astropy_header = pytest_astropy.display',
+        ],
+    }
 )
