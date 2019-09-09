@@ -10,28 +10,31 @@ import datetime
 import locale
 import math
 from collections import OrderedDict
+from distutils.version import LooseVersion
 
 from astropy import __version__ as astropy_version
 from astropy.tests.helper import ignore_warnings
 from astropy.utils.introspection import resolve_name
 
+PYTEST_HEADER_MODULES = OrderedDict([('Numpy', 'numpy'),
+                                    ('Scipy', 'scipy'),
+                                    ('Matplotlib', 'matplotlib'),
+                                    ('h5py', 'h5py'),
+                                    ('Pandas', 'pandas')])
+TESTED_VERSIONS = OrderedDict([('Astropy', astropy_version)])
+
+ASTROPY_LT_30 = LooseVersion(astropy_version) < '3.0'
+ASTROPY_LT_40 = LooseVersion(astropy_version) < '4.0'
+
 # If using a version of astropy that has the display plugin, we make sure that
 # we use those variables for listing the packages, in case we choose to let
 # that plugin handle things below (which we do if that plugin is active).
-try:
-    try:
-        from astropy.tests.plugins.display import (PYTEST_HEADER_MODULES,
-                                                   TESTED_VERSIONS)
-    except ImportError:
-        from astropy.tests.pytest_plugins import (PYTEST_HEADER_MODULES,
-                                                  TESTED_VERSIONS)
-except ImportError:
-    PYTEST_HEADER_MODULES = OrderedDict([('Numpy', 'numpy'),
-                                        ('Scipy', 'scipy'),
-                                        ('Matplotlib', 'matplotlib'),
-                                        ('h5py', 'h5py'),
-                                        ('Pandas', 'pandas')])
-    TESTED_VERSIONS = OrderedDict([('Astropy', astropy_version)])
+if ASTROPY_LT_30:
+    from astropy.tests.pytest_plugins import (PYTEST_HEADER_MODULES,
+                                              TESTED_VERSIONS)
+elif ASTROPY_LT_40:
+    from astropy.tests.plugins.display import (PYTEST_HEADER_MODULES,
+                                               TESTED_VERSIONS)
 
 
 def pytest_addoption(parser):
@@ -50,7 +53,7 @@ def pytest_report_header(config):
 
     # If the astropy display plugin is registered, we stop now and let it
     # handle the header.
-    if config.pluginmanager.hasplugin('astropy.tests.plugins.display'):
+    if ASTROPY_LT_40 and config.pluginmanager.hasplugin('astropy.tests.plugins.display'):
         return
 
     if not config.getoption("astropy_header") and not config.getini("astropy_header"):
@@ -107,9 +110,9 @@ def pytest_report_header(config):
     plat = platform()
     if isinstance(plat, bytes):
         plat = plat.decode(stdoutencoding, 'replace')
-    s += f"Platform: {plat}\n\n"
-    s += f"Executable: {sys.executable}\n\n"
-    s += f"Full Python Version: \n{sys.version}\n\n"
+    s += "Platform: {plat}\n\n".format(plat=plat)
+    s += "Executable: {executable}\n\n".format(executable=sys.executable)
+    s += "Full Python Version: \n{version}\n\n".format(version=sys.version)
 
     s += "encodings: sys: {}, locale: {}, filesystem: {}".format(
         sys.getdefaultencoding(),
@@ -117,24 +120,24 @@ def pytest_report_header(config):
         sys.getfilesystemencoding())
     s += '\n'
 
-    s += f"byteorder: {sys.byteorder}\n"
+    s += "byteorder: {byteorder}\n".format(byteorder=sys.byteorder)
     s += "float info: dig: {0.dig}, mant_dig: {0.dig}\n\n".format(
         sys.float_info)
 
-    s += f"Package versions: \n"
+    s += "Package versions: \n"
 
     for module_display, module_name in packages_to_display.items():
         try:
             with ignore_warnings(DeprecationWarning):
                 module = resolve_name(module_name)
         except ImportError:
-            s += f"{module_display}: not available\n"
+            s += "{module_display}: not available\n".format(module_display=module_display)
         else:
             try:
                 version = module.__version__
             except AttributeError:
                 version = 'unknown (no __version__ attribute)'
-            s += f"{module_display}: {version}\n"
+            s += "{module_display}: {version}\n".format(module_display=module_display, version=version)
 
     # Helpers version
     if 'astropy_helpers' in TESTED_VERSIONS:
@@ -146,7 +149,7 @@ def pytest_report_header(config):
             astropy_helpers_version = None
 
     if astropy_helpers_version:
-        s += f"astropy-helpers: {astropy_helpers_version}\n"
+        s += "astropy-helpers: {astropy_helpers_version}\n".format(astropy_helpers_version=astropy_helpers_version)
 
     s += "\n"
 
