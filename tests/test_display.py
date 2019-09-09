@@ -101,7 +101,7 @@ def test_override_package_single(testdir, capsys, method):
     out, err = capsys.readouterr()
     lines = extract_package_version_lines(out)
     assert len(lines) == 2
-    assert lines[0] == f'numpy: {NUMPY_VERSION}'
+    assert lines[0] == 'numpy: {NUMPY_VERSION}'.format(NUMPY_VERSION=NUMPY_VERSION)
     assert lines[1].startswith('astropy-helpers: ')
 
 
@@ -136,7 +136,7 @@ def test_override_package_multiple(testdir, capsys, method):
     print(out)
     lines = extract_package_version_lines(out)
     assert len(lines) == 3
-    assert lines[0] == f'numpy: {NUMPY_VERSION}'
+    assert lines[0] == 'numpy: {NUMPY_VERSION}'.format(NUMPY_VERSION=NUMPY_VERSION)
     assert lines[1].startswith('pandas')
     assert lines[2].startswith('astropy-helpers: ')
 
@@ -170,7 +170,7 @@ def test_nonexistent(testdir, capsys, method):
     out, err = capsys.readouterr()
     lines = extract_package_version_lines(out)
     assert len(lines) == 2
-    assert lines[0] == f'apackagethatdoesnotexist: not available'
+    assert lines[0] == 'apackagethatdoesnotexist: not available'
     assert lines[1].startswith('astropy-helpers: ')
 
 
