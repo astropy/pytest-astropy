@@ -11,19 +11,27 @@ import locale
 import math
 from collections import OrderedDict
 
+from astropy import __version__ as astropy_version
 from astropy.tests.helper import ignore_warnings
 from astropy.utils.introspection import resolve_name
 
-
-PYTEST_HEADER_MODULES = OrderedDict([('Numpy', 'numpy'),
-                                     ('Scipy', 'scipy'),
-                                     ('Matplotlib', 'matplotlib'),
-                                     ('h5py', 'h5py'),
-                                     ('Pandas', 'pandas')])
-
-# This always returns with Astropy's version
-from astropy import __version__
-TESTED_VERSIONS = OrderedDict([('Astropy', __version__)])
+# If using a version of astropy that has the display plugin, we make sure that
+# we use those variables for listing the packages, in case we choose to let
+# that plugin handle things below (which we do if that plugin is active).
+try:
+    try:
+        from astropy.tests.plugins.display import (PYTEST_HEADER_MODULES,
+                                                   TESTED_VERSIONS)
+    except ImportError:
+        from astropy.tests.pytest_plugins import (PYTEST_HEADER_MODULES,
+                                                  TESTED_VERSIONS)
+except ImportError:
+    PYTEST_HEADER_MODULES = OrderedDict([('Numpy', 'numpy'),
+                                        ('Scipy', 'scipy'),
+                                        ('Matplotlib', 'matplotlib'),
+                                        ('h5py', 'h5py'),
+                                        ('Pandas', 'pandas')])
+    TESTED_VERSIONS = OrderedDict([('Astropy', astropy_version)])
 
 
 def pytest_addoption(parser):
@@ -39,6 +47,11 @@ def pytest_addoption(parser):
 
 
 def pytest_report_header(config):
+
+    # If the astropy display plugin is registered, we stop now and let it
+    # handle the header.
+    if config.pluginmanager.hasplugin('astropy.tests.plugins.display'):
+        return
 
     if not config.getoption("astropy_header") and not config.getini("astropy_header"):
         return
