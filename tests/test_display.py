@@ -1,12 +1,8 @@
 import pytest
 
 import numpy
-import pandas
-import skimage
 
 NUMPY_VERSION = numpy.__version__
-PANDAS_VERSION = pandas.__version__
-SKIMAGE_VERSION = skimage.__version__
 
 pytest_plugins = ['pytester']
 
@@ -141,7 +137,7 @@ def test_override_package_multiple(testdir, capsys, method):
     lines = extract_package_version_lines(out)
     assert len(lines) == 3
     assert lines[0] == f'numpy: {NUMPY_VERSION}'
-    assert lines[1] == f'pandas: {PANDAS_VERSION}'
+    assert lines[1].startswith('pandas')
     assert lines[2].startswith('astropy-helpers: ')
 
 

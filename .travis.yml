@@ -19,6 +19,7 @@ env:
         - PYTEST_VERSION=4
         - PYTEST_COMMAND='pytest'
         - NUMPY_VERSION=stable
+        - CONDA_DEPENDENCIES='astropy'
 
     matrix:
         - PYTHON_VERSION=2.7 PYTEST_COMMAND='py.test'
