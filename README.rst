@@ -6,7 +6,7 @@ This is a meta-package that pulls in the dependencies that are used by
 `astropy`_ and some `affiliated packages`_ for testing. It can also be used for
 testing packages that are not affiliated with the Astropy project.
 
-.. _astropy: https://astropy.org/en/latest/
+.. _astropy: https://docs.astropy.org/en/latest/
 .. _affiliated packages: https://astropy.org/affiliated
 
 Dependencies
