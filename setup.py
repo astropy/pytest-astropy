@@ -53,6 +53,7 @@ setup(
         'pytest-doctestplus>=0.2.0',
         'pytest-remotedata>=0.3.1',
         'pytest-openfiles>=0.3.1',
+        'pytest-astropy-header',
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
         'pytest-arraydiff>=0.1'

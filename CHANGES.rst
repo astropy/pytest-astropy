@@ -1,3 +1,8 @@
+0.6.0 (unreleased)
+==================
+
+- Added ``pytest-astropy-header`` as a dependency.
+
 0.5.0 (2018-11-26)
 ==================
 
