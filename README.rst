@@ -15,6 +15,7 @@ Dependencies
 The following dependencies are installed by this package:
 
 * The `pytest`_ testing framework for Python
+* `pytest-astropy-header`_, a ``pytest`` plugin used for custom test header
 * `pytest-remotedata`_, a ``pytest`` plugin used for controlling access to data
   files hosted online
 * `pytest-doctestplus`_, a ``pytest`` plugin that provides advanced features
@@ -25,6 +26,7 @@ The following dependencies are installed by this package:
   comparison of data arrays produced during unit tests
 
 .. _pytest: https://doc.pytest.org
+.. _pytest-astropy-header: https://github.com/astropy/pytest-astropy-header
 .. _pytest-remotedata: https://github.com/astropy/pytest-remotedata
 .. _pytest-doctestplus: https://github.com/astropy/pytest-doctestplus
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
