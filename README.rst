@@ -24,6 +24,7 @@ The following dependencies are installed by this package:
   inadvertently left open at the end of unit tests
 * `pytest-arraydiff`_, a ``pytest`` plugin that enables the generation and
   comparison of data arrays produced during unit tests
+* `hypothesis`_, a Python library for property based testing.
 
 .. _pytest: https://doc.pytest.org
 .. _pytest-astropy-header: https://github.com/astropy/pytest-astropy-header
@@ -31,6 +32,7 @@ The following dependencies are installed by this package:
 .. _pytest-doctestplus: https://github.com/astropy/pytest-doctestplus
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
 .. _pytest-arraydiff: https://github.com/astrofrog/pytest-arraydiff
+.. _hypothesis: https://hypothesis.readthedocs.io
 
 Installation
 ------------

@@ -56,6 +56,7 @@ setup(
         'pytest-astropy-header',
         # Do not include as dependency until CI issues can be worked out
         #'pytest-mpl',
-        'pytest-arraydiff>=0.1'
+        'pytest-arraydiff>=0.1',
+        'hypothesis'
     ]
 )
