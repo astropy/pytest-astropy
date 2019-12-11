@@ -2,14 +2,7 @@
 # Licensed under a 3-clause BSD style license - see LICENSE.rst
 # -*- encoding: utf-8 -*-
 
-import io
-import re
-from glob import glob
-from os.path import basename
-from os.path import dirname
-from os.path import join
-from os.path import splitext
-from setuptools import setup, find_packages
+from setuptools import setup
 
 
 def readme():
@@ -19,7 +12,7 @@ def readme():
 
 setup(
     name='pytest-astropy',
-    version='0.6.0',
+    version='0.7.0',
     license='BSD',
     description='Meta-package containing dependencies for testing',
     long_description=readme(),
