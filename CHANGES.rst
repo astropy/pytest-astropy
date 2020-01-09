@@ -1,3 +1,9 @@
+0.8.0 (unreleased)
+==================
+
+- Added ``pytest-mpl``, ``pytest-filter-subpackage`` and ``pytest-cov``
+  as dependencies. [#29]
+
 0.7.0 (2019-12-10)
 ==================
 
