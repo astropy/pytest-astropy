@@ -24,6 +24,13 @@ The following dependencies are installed by this package:
   inadvertently left open at the end of unit tests
 * `pytest-arraydiff`_, a ``pytest`` plugin that enables the generation and
   comparison of data arrays produced during unit tests
+* `pytest-astropy-header`_, a ``pytest`` plugin that adds additional diagnostic
+  information to the header of the test output.
+* `pytest-filter-subpackage`_, a ``pytest`` plugin that adds a ``-P`` option to
+  pytest to filter by sub-package.
+* `pytest-mpl`_, a ``pytest`` plugin used for pixel-by-pixel testing of images
+  generated from tests.
+* `pytest-cov`_, a ``pytest`` plugin to measure test coverage.
 * `hypothesis`_, a Python library for property based testing.
 
 .. _pytest: https://doc.pytest.org
@@ -31,7 +38,11 @@ The following dependencies are installed by this package:
 .. _pytest-remotedata: https://github.com/astropy/pytest-remotedata
 .. _pytest-doctestplus: https://github.com/astropy/pytest-doctestplus
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
-.. _pytest-arraydiff: https://github.com/astrofrog/pytest-arraydiff
+.. _pytest-arraydiff: https://github.com/astropy/pytest-arraydiff
+.. _pytest-astropy-header: https://github.com/astropy/pytest-astropy-header
+.. _pytest-filter-subpackage: https://github.com/astropy/pytest-filter-subpackage
+.. _pytest-mpl: https://github.com/matplotlib/pytest-mpl
+.. _pytest-cov: https://github.com/pytest-dev/pytest-cov
 .. _hypothesis: https://hypothesis.readthedocs.io
 
 Installation
