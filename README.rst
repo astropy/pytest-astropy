@@ -26,8 +26,6 @@ The following dependencies are installed by this package:
   comparison of data arrays produced during unit tests
 * `pytest-filter-subpackage`_, a ``pytest`` plugin that adds a ``-P`` option to
   pytest to filter by sub-package.
-* `pytest-mpl`_, a ``pytest`` plugin used for pixel-by-pixel testing of images
-  generated from tests.
 * `pytest-cov`_, a ``pytest`` plugin to measure test coverage.
 * `hypothesis`_, a Python library for property based testing.
 
@@ -38,7 +36,6 @@ The following dependencies are installed by this package:
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
 .. _pytest-arraydiff: https://github.com/astropy/pytest-arraydiff
 .. _pytest-filter-subpackage: https://github.com/astropy/pytest-filter-subpackage
-.. _pytest-mpl: https://github.com/matplotlib/pytest-mpl
 .. _pytest-cov: https://github.com/pytest-dev/pytest-cov
 .. _hypothesis: https://hypothesis.readthedocs.io
 
