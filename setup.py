@@ -11,4 +11,4 @@ if LooseVersion(setuptools.__version__) < LooseVersion('30.3.0'):
                      "later (found {0})".format(setuptools.__version__))
     sys.exit(1)
 
-setup()
+setup(use_scm_version=True)
