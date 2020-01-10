@@ -1,8 +1,11 @@
 0.8.0 (unreleased)
 ==================
 
-- Added ``pytest-mpl``, ``pytest-filter-subpackage`` and ``pytest-cov``
-  as dependencies. [#29]
+- Added ``pytest-filter-subpackage`` and ``pytest-cov`` as dependencies. [#29]
+
+- Dropped support for Python 2.7 and 3.5. [#29]
+
+- Require Hypothesis 5.1 or later. [#29]
 
 0.7.0 (2019-12-10)
 ==================
