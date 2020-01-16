@@ -1,4 +1,4 @@
-0.8.0 (unreleased)
+0.8.0 (2020-01-16)
 ==================
 
 - Added ``pytest-filter-subpackage`` and ``pytest-cov`` as dependencies. [#29]
