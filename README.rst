@@ -14,18 +14,20 @@ Dependencies
 
 The following dependencies are installed by this package:
 
-* The `pytest`_ testing framework for Python
-* `pytest-astropy-header`_, a ``pytest`` plugin used for custom test header
+* The `pytest`_ testing framework for Python.
+* `pytest-astropy-header`_, a ``pytest`` plugin used for custom test header.
 * `pytest-remotedata`_, a ``pytest`` plugin used for controlling access to data
-  files hosted online
+  files hosted online.
 * `pytest-doctestplus`_, a ``pytest`` plugin that provides advanced features
-  for testing example code in documentation
+  for testing example code in documentation.
 * `pytest-openfiles`_, a ``pytest`` plugin for detecting file handles that were
-  inadvertently left open at the end of unit tests
+  inadvertently left open at the end of unit tests.
 * `pytest-arraydiff`_, a ``pytest`` plugin that enables the generation and
-  comparison of data arrays produced during unit tests
+  comparison of data arrays produced during unit tests.
 * `pytest-filter-subpackage`_, a ``pytest`` plugin that adds a ``-P`` option to
   pytest to filter by sub-package.
+* `pytest-mock`_,  a thin-wrapper around the mock package for easier use
+  with ``pytest``.
 * `pytest-cov`_, a ``pytest`` plugin to measure test coverage.
 * `hypothesis`_, a Python library for property based testing.
 
@@ -36,6 +38,7 @@ The following dependencies are installed by this package:
 .. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
 .. _pytest-arraydiff: https://github.com/astropy/pytest-arraydiff
 .. _pytest-filter-subpackage: https://github.com/astropy/pytest-filter-subpackage
+.. _pytest-mock: https://github.com/pytest-dev/pytest-mock
 .. _pytest-cov: https://github.com/pytest-dev/pytest-cov
 .. _hypothesis: https://hypothesis.readthedocs.io
 
