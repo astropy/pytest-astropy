@@ -3,6 +3,7 @@
 
 - Added ``pytest-mock`` as dependency. [#31]
 
+- Require ``pytest-cov`` 2.3.1 or later. [#41]
 
 0.8.0 (2020-01-16)
 ==================
