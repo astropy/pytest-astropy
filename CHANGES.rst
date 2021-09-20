@@ -5,6 +5,10 @@
 
 - Require ``pytest-cov`` 2.3.1 or later. [#41]
 
+- Require ``pytest-doctestplus`` 0.11.0 or later. [#43]
+
+- Dropped support for Python 3.6. [#43]
+
 0.8.0 (2020-01-16)
 ==================
 
