@@ -1,4 +1,4 @@
-0.9.0 (unreleased)
+0.9.0 (2021-09-21)
 ==================
 
 - Added ``pytest-mock`` as dependency. [#31]
