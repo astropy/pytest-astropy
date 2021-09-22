@@ -2,6 +2,10 @@
 pytest-astropy
 ==============
 
+.. image:: https://zenodo.org/badge/104255122.svg
+   :target: https://zenodo.org/badge/latestdoi/104255122
+   :alt: Zenodo DOI
+
 This is a meta-package that pulls in the dependencies that are used by
 `astropy`_ and some `affiliated packages`_ for testing. It can also be used for
 testing packages that are not affiliated with the Astropy project.
