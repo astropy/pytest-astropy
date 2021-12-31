@@ -1,6 +1,8 @@
 0.10.0 (unreleased)
 ===================
 
+- Dropped ``distutils`` as build dependency. [#47]
+
 0.9.0 (2021-09-21)
 ==================
 
