@@ -52,3 +52,6 @@ htmlcov
 
 # PyCharm
 .idea
+
+pytest_astropy/version.py
+pip-wheel-metadata/
