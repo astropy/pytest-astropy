@@ -10,6 +10,12 @@ This is a meta-package that pulls in the dependencies that are used by
 `astropy`_ and some `affiliated packages`_ for testing. It can also be used for
 testing packages that are not affiliated with the Astropy project.
 
+This package also provides pytest markers for cpu and memory intensive tests
+(``pytest.mark.slow`` and ``pytest.mark.hugemem``). Tests marked with those
+markers are not run by default, can be run with the other tests with
+``--run-slow`` and ``--run-hugemem``, and can be run separately with ``-m slow``
+and ``-n hugemem``.
+
 .. _astropy: https://docs.astropy.org/en/latest/
 .. _affiliated packages: https://astropy.org/affiliated
 
