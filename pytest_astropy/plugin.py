@@ -1,5 +1,7 @@
-# Add a --runslow option to run slow tests
-# From https://docs.pytest.org/en/latest/example/simple.html#control-skipping-of-tests-according-to-command-line-option
+# Licensed under a 3-clause BSD style license - see LICENSE.rst
+
+# Add a --run-slow and --run-hugemem options to run cpu and memory
+# intensive tests
 
 import pytest
 
