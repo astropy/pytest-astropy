@@ -3,6 +3,8 @@
 
 - Dropped ``distutils`` as build dependency. [#47]
 
+- Require ``pytest`` 7.0 or later. [#49]
+
 0.9.0 (2021-09-21)
 ==================
 
