@@ -3,6 +3,8 @@
 
 - Dropped ``distutils`` as build dependency. [#47]
 
+- Added plugin for cpu/memory intensive tests. See ``README.rst``. [#48]
+
 0.9.0 (2021-09-21)
 ==================
 
