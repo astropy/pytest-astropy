@@ -14,7 +14,7 @@ This package also provides pytest markers for cpu and memory intensive tests
 (``pytest.mark.slow`` and ``pytest.mark.hugemem``). Tests marked with those
 markers are not run by default, can be run with the other tests with
 ``--run-slow`` and ``--run-hugemem``, and can be run separately with ``-m slow``
-and ``-n hugemem``.
+and ``-m hugemem``.
 
 .. _astropy: https://docs.astropy.org/en/latest/
 .. _affiliated packages: https://astropy.org/affiliated
