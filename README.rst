@@ -30,8 +30,6 @@ The following dependencies are installed by this package:
   files hosted online.
 * `pytest-doctestplus`_, a ``pytest`` plugin that provides advanced features
   for testing example code in documentation.
-* `pytest-openfiles`_, a ``pytest`` plugin for detecting file handles that were
-  inadvertently left open at the end of unit tests.
 * `pytest-arraydiff`_, a ``pytest`` plugin that enables the generation and
   comparison of data arrays produced during unit tests.
 * `pytest-filter-subpackage`_, a ``pytest`` plugin that adds a ``-P`` option to
@@ -45,7 +43,6 @@ The following dependencies are installed by this package:
 .. _pytest-astropy-header: https://github.com/astropy/pytest-astropy-header
 .. _pytest-remotedata: https://github.com/astropy/pytest-remotedata
 .. _pytest-doctestplus: https://github.com/astropy/pytest-doctestplus
-.. _pytest-openfiles: https://github.com/astropy/pytest-openfiles
 .. _pytest-arraydiff: https://github.com/astropy/pytest-arraydiff
 .. _pytest-filter-subpackage: https://github.com/astropy/pytest-filter-subpackage
 .. _pytest-mock: https://github.com/pytest-dev/pytest-mock

@@ -1,6 +1,10 @@
 0.11.0 (unreleased)
 ===================
 
+- Dropped ``pytest-openfiles`` as dependency. If you still use it,
+  you can install it separately. See https://github.com/astropy/pytest-openfiles/pull/44
+  for more information. [#52]
+
 0.10.0 (2022-04-21)
 ===================
 
