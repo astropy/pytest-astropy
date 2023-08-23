@@ -19,6 +19,10 @@ def pytest_addoption(parser):
         default=False,
         help="run memory intensive tests",
     )
+    parser.addoption(
+        "-R", nargs="?", const='any', default='none',
+        help="run tests with online data, requires pytest-remotedata",
+        dest="remote_data", choices=['astropy', 'any', 'github', 'none'])
 
 
 def pytest_configure(config):
