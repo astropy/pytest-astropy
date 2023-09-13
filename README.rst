@@ -16,6 +16,8 @@ markers are not run by default, can be run with the other tests with
 ``--run-slow`` and ``--run-hugemem``, and can be run separately with ``-m slow``
 and ``-m hugemem``.
 
+The package also provides the short option ``-R`` for ``--remote-data``.
+
 .. _astropy: https://docs.astropy.org/en/latest/
 .. _affiliated packages: https://astropy.org/affiliated
 

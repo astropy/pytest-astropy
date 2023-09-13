@@ -5,6 +5,10 @@
   you can install it separately. See https://github.com/astropy/pytest-openfiles/pull/44
   for more information. [#52]
 
+- - ``-R`` is added as a short version for the command-line option
+  ``--remote-data``. [#55]
+
+
 0.10.0 (2022-04-21)
 ===================
 
