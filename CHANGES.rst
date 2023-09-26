@@ -1,12 +1,22 @@
-0.11.0 (unreleased)
+0.11.0 (2023-09-26)
 ===================
 
 - Dropped ``pytest-openfiles`` as dependency. If you still use it,
   you can install it separately. See https://github.com/astropy/pytest-openfiles/pull/44
   for more information. [#52]
 
-- - ``-R`` is added as a short version for the command-line option
+- ``-R`` is added as a short version for the command-line option
   ``--remote-data``. [#55]
+
+- Require ``pytest-doctestplus`` 1.0.0 or later. [#56]
+
+- Require ``pytest-remotedata`` 0.4.1 or later. [#56]
+
+- Require ``pytest-astropy-header`` 0.2.2 or later. [#56]
+
+- Require ``pytest-arraydiff`` 0.5 or later. [#56]
+
+- Require ``pytest-filter-subpackage`` 0.1.2 or later. [#56]
 
 
 0.10.0 (2022-04-21)
