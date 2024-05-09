@@ -1,7 +1,7 @@
 0.12.0 (unreleased)
 ===================
 
-- No changes yet.
+- Dropped support for Python 3.7. [#60]
 
 
 0.11.0 (2023-09-26)
