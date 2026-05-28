@@ -2,6 +2,9 @@
 ===================
 
 - Minimum supported Python version is now 3.8. [#60]
+- ``slow`` and ``hugemem`` markers, and corresponding CLI flags ``--run-slow`` and
+  ``--run-hugemem``, are now defined by ``pytest-skip-slow``, which we now require
+  version 1.1.0 or later of. [#79]
 
 0.11.0 (2023-09-26)
 ===================

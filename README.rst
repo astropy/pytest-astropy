@@ -10,12 +10,6 @@ This is a meta-package that pulls in the dependencies that are used by
 `astropy`_ and some `affiliated packages`_ for testing. It can also be used for
 testing packages that are not affiliated with the Astropy project.
 
-This package also provides pytest markers for cpu and memory intensive tests
-(``pytest.mark.slow`` and ``pytest.mark.hugemem``). Tests marked with those
-markers are not run by default, can be run with the other tests with
-``--run-slow`` and ``--run-hugemem``, and can be run separately with ``-m slow``
-and ``-m hugemem``.
-
 The package also provides the short option ``-R`` for ``--remote-data``.
 
 .. _astropy: https://docs.astropy.org/en/latest/
@@ -39,6 +33,8 @@ The following dependencies are installed by this package:
 * `pytest-mock`_,  a thin-wrapper around the mock package for easier use
   with ``pytest``.
 * `pytest-cov`_, a ``pytest`` plugin to measure test coverage.
+* `pytest-skip-slow`_, a ``pytest`` plugin to mark tests as slow or memory intensive,
+  and skip them by default.
 * `hypothesis`_, a Python library for property based testing.
 
 .. _pytest: https://doc.pytest.org
@@ -49,6 +45,7 @@ The following dependencies are installed by this package:
 .. _pytest-filter-subpackage: https://github.com/astropy/pytest-filter-subpackage
 .. _pytest-mock: https://github.com/pytest-dev/pytest-mock
 .. _pytest-cov: https://github.com/pytest-dev/pytest-cov
+.. _pytest-skip-slow: https://github.com/okken/pytest-skip-slow
 .. _hypothesis: https://hypothesis.readthedocs.io
 
 Installation
