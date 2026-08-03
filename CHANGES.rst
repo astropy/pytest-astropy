@@ -1,4 +1,4 @@
-0.12.0 (unreleased)
+0.12.0 (2026-08-03)
 ===================
 
 - Minimum supported Python version is now 3.8. [#60]
