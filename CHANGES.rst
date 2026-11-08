@@ -1,6 +1,10 @@
 0.13.0 (unreleased)
 ===================
 
+- Minimum supported Python version is now 3.11. [#TBD]
+
+- Require ``pytest-remotedata`` 0.4.3 or later. [#TBD]
+
 0.12.0 (2026-08-03)
 ===================
 
